@@ -17,6 +17,8 @@
             bool dispostoAtencao;   // pode dar atenção a pets carentes
 
         public:
+
+            Adotante();
             Adotante(int id, string nome, string endereco, bool temPatio, string preferenciaPorte,
                     string estiloVida, bool temTempoLivre, bool dispostoAtencao);
 
