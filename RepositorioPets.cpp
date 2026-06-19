@@ -5,7 +5,7 @@
 
     void RepositorioPets::adicionar(const Pet& pet){
         pets.push_back(pet);
-    }
+}
 
     Pet RepositorioPets::buscarPorId(int id) {
         for (auto& p : pets){
@@ -13,10 +13,10 @@
         }
         cout << "Pet nao encontrado!\n";
         return Pet();
-    }
+}
 
     void RepositorioPets::listarPets() {
         for (auto& p : pets){
             p.exibirPet();
         }
-    }
+}
