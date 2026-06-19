@@ -3,6 +3,8 @@
 #include <vector>
 #include "Adotante.h"
 
+        // Classe que funciona como repositório de adotantes
+        // Armazena, organiza e fornece acesso aos dados dos adotantes
     class RepositorioAdotantes {
         private:
             std::vector<Adotante> adotantes;
