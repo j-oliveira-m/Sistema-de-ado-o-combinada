@@ -3,6 +3,8 @@
 #include <vector>
 #include "Pet.h"
 
+        // Classe que funciona como repositório de Pets
+// Cria o escopo para armazenar, organizar e acessar os dados dos pets
     class RepositorioPets {
         private:
             std::vector<Pet> pets;
