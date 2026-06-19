@@ -1,6 +1,6 @@
 #include "MatchStrategy.h"
 #include <iostream>
-using namespace std;
+using namespace std;   // sistema de match, avalia a compatibilidade do adotante e o pet
 
     int MatchStrategy::calcularCompatibilidade(const Adotante& adotante, const Pet& pet) {
         int score = 0;
