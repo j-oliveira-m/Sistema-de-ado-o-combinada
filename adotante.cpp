@@ -1,15 +1,13 @@
 #include "Adotante.h"
 
-    Adotante::Adotante(int id, string nome, string endereco, bool temPatio,
+    Adotante::Adotante(int id, string nome, bool animalComdeficiencia, bool temPatio,
                    string preferenciaPorte, string estiloVida, bool temTempoLivre,
                    bool dispostoAtencao)
-                    : id(id), nome(nome), endereco(endereco),
-                    temPatio(temPatio), preferenciaPorte(preferenciaPorte),
+                    : id(id), nome(nome),temPatio(temPatio), preferenciaPorte(preferenciaPorte),
                     estiloVida(estiloVida), temTempoLivre(temTempoLivre),
                     dispostoAtencao(dispostoAtencao) {}
 
-    Adotante::Adotante() : id(-1), nome(""), endereco(""),
-                       temPatio(false), preferenciaPorte(""),
+    Adotante::Adotante() : id(-1), nome(""), temPatio(false), preferenciaPorte(""),
                        estiloVida(""), temTempoLivre(false),
                        dispostoAtencao(false) {}
 
@@ -18,10 +16,13 @@
         cout << "Digite o nome do adotante: ";
         getline(cin, nome);
 
-        cout << "Digite o endereco: ";
-        getline(cin, endereco);
-
         char resposta;
+
+        cout << "Adotaria um animalzinho com deficiencia ou problemas de saude: (s/n): ";
+        cin >> resposta;
+        animalComdeficiencia = (resposta == 's' || resposta == 'S');
+        cin.ignore();
+
         cout << "Possui patio: (s/n): ";
         cin >> resposta;
         temPatio = (resposta == 's' || resposta == 'S');
@@ -47,7 +48,7 @@
         cout << "\n--- Dados do Adotante ---\n";
         cout << "ID: " << id << "\n";
         cout << "Nome: " << nome << "\n";
-        cout << "Endereco: " << endereco << "\n";
+        cout << "Adotaria um animalzinho com deficiencia ou problemas de saude: " << (animalComdeficiencia ? "Sim" : "Nao") << "\n";
         cout << "Possui patio: " << (temPatio ? "Sim" : "Nao") << "\n";
         cout << "Preferencia de porte: " << preferenciaPorte << "\n";
         cout << "Estilo de vida: " << estiloVida << "\n";
