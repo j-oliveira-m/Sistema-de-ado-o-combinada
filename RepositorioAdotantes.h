@@ -15,6 +15,8 @@
     void adicionar(const Adotante& adotante);
         Adotante buscarPorId(int id);
     void listarAdotantes();
+
+
 };
 
 #endif
