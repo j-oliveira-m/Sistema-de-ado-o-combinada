@@ -20,6 +20,7 @@
     // Métodos para Adotantes
     void cadastrarAdotante();
     void listarAdotantes();
+    void editarAdotante(int id);
     Adotante buscarAdotantePorId(int id);
 
     // Match e relatório
