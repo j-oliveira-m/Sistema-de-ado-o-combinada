@@ -5,7 +5,6 @@ using namespace std;
     void RepositorioAdotantes::adicionar(const Adotante& adotante) {
         adotantes.push_back(adotante);
 }
-
         Adotante RepositorioAdotantes::buscarPorId(int id) {
             for (auto& a : adotantes) {
                 if (a.getId() == id) return a;
